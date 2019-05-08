@@ -3,13 +3,8 @@
   "short_name": "Test",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "https://cdn.firstup.com/favicon.png",
       "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "favicon.ico",
-      "sizes": "192x192 512x512",
       "type": "image/png"
     }
   ],
