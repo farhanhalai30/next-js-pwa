@@ -17,9 +17,9 @@ export default class extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        {/* <Head>
+        <Head>
           <link rel="manifest" href={"/manifest.json"} />
-        </Head> */}
+        </Head>
         <p>Check the console for the Service Worker registration status.</p>
       </React.Fragment>
     );

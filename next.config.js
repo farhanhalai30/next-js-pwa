@@ -1,6 +1,8 @@
 // next.config.js
 const withOffline = require("next-offline");
 
-const nextConfig = {};
+const nextConfig = {
+  target: "serverless"
+};
 
 module.exports = withOffline(nextConfig);
