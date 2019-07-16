@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 
 export default class extends React.PureComponent {
@@ -16,12 +15,13 @@ export default class extends React.PureComponent {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="container">
         <Head>
           <link rel="manifest" href={"/manifest.json"} />
         </Head>
-        <p>Check the console for the Service Worker registration status.</p>
-      </React.Fragment>
+        {/* <p>Check the console for the Service Worker registration status.</p> */}
+        <h1>Homepage</h1>
+      </div>
     );
   }
 }

@@ -3,12 +3,12 @@
   "short_name": "Test",
   "icons": [
     {
-      "src": "/static/favicon.ico",
-      "sizes": "144x144",
+      "src": "https://i.imgsafe.org/db/db23fef436.png",
+      "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "/static/favicon.ico",
+      "src": "https://i.imgsafe.org/db/db23fef436.png",
       "sizes": "192x192 512x512",
       "type": "image/png"
     }

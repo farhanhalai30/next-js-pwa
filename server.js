@@ -9,9 +9,13 @@ const {
   manifestHandler
 } = require("./hapiWrapper");
 
+require("dotenv").config();
+
 const port = 3001;
+// const dev = false;
 const dev =
   process.env.NODE_ENV !== "production" && process.env.NODE_ENV !== "staging";
+// console.log(dev);
 const app = next({ dev });
 const server = new Hapi.Server({
   port
@@ -23,7 +27,10 @@ app.prepare().then(async () => {
   server.route({
     method: "GET",
     path: "/service-worker.js",
-    handler: StaticFileHandler,
+    // handler: StaticFileHandler,
+    handler: function(request, h) {
+      return h.file("./.next/service-worker.js");
+    },
     options: {
       state: {
         parse: false, // parse cookies and store in request.state
@@ -35,7 +42,9 @@ app.prepare().then(async () => {
   server.route({
     method: "GET",
     path: "/manifest.json",
-    handler: manifestHandler,
+    handler: function(request, h) {
+      return h.file("./static/manifest.json");
+    },
     options: {
       state: {
         parse: false, // parse cookies and store in request.state

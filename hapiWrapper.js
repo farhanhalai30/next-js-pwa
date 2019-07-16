@@ -22,6 +22,7 @@ const pathWrapper = (app, pathName, opts) => async ({ raw, query, params }) => {
 
 const StaticFileHandler = (request, reply) => {
   //   let contentType = request.params.extension ? "" : "text/xml";
+  console.log("./.next/" + request.url.pathname.split("/")[1]);
   return reply
     .file("./.next/" + request.url.pathname.split("/")[1])
     .type("text/javascript");
@@ -29,7 +30,9 @@ const StaticFileHandler = (request, reply) => {
 
 const manifestHandler = (request, reply) => {
   //   let contentType = request.params.extension ? "" : "text/xml";
-  return reply.file("./static/" + request.url.pathname.split("/")[1]).type("");
+  return reply
+    .file("./static/" + request.url.pathname.split("/")[1])
+    .type("text/json");
 };
 
 module.exports = {

@@ -2,7 +2,7 @@
 const withOffline = require("next-offline");
 
 const nextConfig = {
-  target: "serverless"
+  // target: "serverless"
 };
 
 module.exports = withOffline(nextConfig);
