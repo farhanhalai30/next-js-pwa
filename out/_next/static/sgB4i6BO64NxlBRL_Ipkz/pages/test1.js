@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["8843"],{R7NH:function(n,t,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/test1",function(){var n=e("o19i");return{page:n.default||n}}])},o19i:function(n,t,e){"use strict";e.r(t);var i=e("q1tI"),o=e.n(i);t.default=function(){return o.a.createElement("h1",null,"This is test page")}}},[["R7NH","5d41","9da1"]]]);

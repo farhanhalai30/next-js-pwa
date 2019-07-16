@@ -1,0 +1,20 @@
+{
+  "name": "Test PWA",
+  "short_name": "Test",
+  "icons": [
+    {
+      "src": "https://i.imgsafe.org/db/db23fef436.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgsafe.org/db/db23fef436.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
